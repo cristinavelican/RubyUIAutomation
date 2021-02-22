@@ -1,3 +1,5 @@
+# This is a comment change
+
 Given('We are on the home page of the automationpractice website') do
     visit "http://automationpractice.com/index.php"
 end
