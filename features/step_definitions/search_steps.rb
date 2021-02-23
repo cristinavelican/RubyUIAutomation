@@ -1,4 +1,6 @@
+
 # This is a comment for Git on the Search page
+
 
 Given('We are on the home page of the automationpractice website') do
     visit "http://automationpractice.com/index.php"

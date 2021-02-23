@@ -4,6 +4,8 @@ Feature: Search
 
 This feature will deal with searching & validating the search of the products of this website
 
+#This is a github test
+
 @search
 Scenario: Validation of search functionality on home page
 Given We are on the home page of the automationpractice website
