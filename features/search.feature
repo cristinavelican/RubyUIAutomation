@@ -1,3 +1,5 @@
+# This is a comment for Git on the Search feature file
+
 Feature: Search
 
 This feature will deal with searching & validating the search of the products of this website
