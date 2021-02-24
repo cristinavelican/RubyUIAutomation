@@ -1,3 +1,5 @@
+
+
 Given('We are on the home page of the automationpractice website') do
     visit "http://automationpractice.com/index.php"
 end
@@ -8,6 +10,7 @@ When('We search for {string}') do |product_name|
 end
   
 Then('The number of {string} results should match the number of products displayed') do |string|
+  # binding.pry
    number_of_results = find(:css,"span[class='heading-counter']").text.split()[0].to_i
    p number_of_results
    number_of_products_displayed = page.all(:css,".product_img_link").length
