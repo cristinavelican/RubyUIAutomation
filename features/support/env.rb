@@ -1,6 +1,7 @@
 require 'capybara'
 require 'rspec'
 require 'capybara/dsl'
+require 'pry'
 
 
 Capybara.run_server = false

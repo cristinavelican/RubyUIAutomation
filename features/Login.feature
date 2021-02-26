@@ -11,7 +11,7 @@ Feature: Login
         Then I am logged in
 
     @loginfail
-    Scenario Outline: Validation of invalid login credentials
+    Scenario Outline: Validation of invalid login credential error messages
         Given We are on the home page of the automationpractice website
         When I click on sign in
             And I enter invalid credentials "<username>" and "<password>"
@@ -19,5 +19,5 @@ Feature: Login
         Examples:
             | scenario       | username              | password   | errormessage           |
             | wrong_username | nes.be.coc2@gmail.com | Testing@01 | Authentication failed. |
-            | wrong_password | nes.be.coc1@gmail.com | Testing@02 | Authentication failed. |
-            | invalid_email  | John                  | Doe        | Invalid email address. |
+            #| wrong_password | nes.be.coc1@gmail.com | Testing@02 | Authentication failed. |
+            #| invalid_email  | John                  | Doe        | Invalid email address. |
