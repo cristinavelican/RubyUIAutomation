@@ -36,6 +36,7 @@ In this feature file you will add the BDD scenarios
 Navigate to the website under test http://automationpractice.com/index.php and automate the following functionalities:
 
 ### Search functionality:
+* Using the POM principles, refactor the Then step from the @search scenario, according to the principles (follow the same rules as already done for the `When`)
 * Convert the already created scenario into a scenario outline so more products can be searched on, at once. What do you experience here?
 * Search for a product that doesn't exist and validate the error message received
 * Use the advanced search functionality (e.g. type "dress" and select from the list of recommendations "Casual Dresses > Printed")
