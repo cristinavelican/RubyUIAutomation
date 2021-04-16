@@ -7,6 +7,12 @@ This project is developed as a way to learn and apply Ruby in UI automation, by 
 * Fork the framework into your own domain or download it locally on your computer
 * Read the below information and use the resources mentioned to get used to the programming languages and the best practices to be apply while coding
 
+## Prerequisites
+* Install Ruby locally
+* Install the bundler gem (gem install bundler)
+* Go to the location of your newly cloned / downloaded framework and do a `bundle install` to install all the necessary gems 
+* In order to run the created scenario, in your terminal run command `cucumber -t @search`
+
 ## Framework structure
 The below framework can be used for UI automation, using Ruby and Capybara (a Ruby gem/library similar to Selenium that can be used for UI automation).
 
@@ -31,6 +37,7 @@ In this feature file you will add the BDD scenarios
       - 2. Basic Web Automation - using Ruby 
       - 4. BDD Metodology - 4.2 Cucumber concepts
       - 6. Source Control - Getting started with Git
+* For the Jenkins part: https://degreed.com/pathway/79xojoo39k?path=jenkins
 
 ## Exercises to do:
 Navigate to the website under test http://automationpractice.com/index.php and automate the following functionalities:
@@ -55,4 +62,16 @@ Navigate to the website under test http://automationpractice.com/index.php and a
 ### Shopping cart
 * Add a product to a cart and order it successfully by filling in all the required info (as an authenticated user)
 * Add a product to a cart and order it successfully by filling in all the required info (without being authenticated)
+
+### Technical improvements for the framework
+* Create html reports while running your scripts
+* Create profiles (cucumber.yml files) that will allow you to run the scripts in various browsers
+* Add extra configuration in the env.rb files for other browsers (e.g. Edge, IE11)
+* In the hooks.rb file add an after hook with allows you to add screenshots in case scenarios fail
+ 
+### Use Jenkins to run your scripts (Advanced)
+* Configure a jenkins agent locally 
+* Create pipelines for various browsers and run the scripts
+* Use the groovy script from pipelines > demo_pipeline as an example on how to configure your pipelines in Jenkins
+
 

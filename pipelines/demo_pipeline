@@ -1,0 +1,19 @@
+#!groovy
+node('Cristina_Windows'){
+    stage('Remove workspace')
+    {
+        cleanWs()
+    }
+    stage('Checkout'){
+        checkout([$class: 'GitSCM', branches: [[name: '*/main']], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'demo-framework']], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'GIT_JENKINS_USER', url: 'https://github.com/cristinavelican/RubyUIAutomation']]])
+    }
+
+    dir('demo-framework'){
+        stage('Run the tests')
+        {
+            steps.bat 'cucumber -t @search'
+        }
+    }
+
+
+}
