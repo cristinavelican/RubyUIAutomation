@@ -8,8 +8,8 @@ This project is developed as a way to learn and apply Ruby in UI automation, by 
 * Read the below information and use the resources mentioned to get used to the programming languages and the best practices to be apply while coding
 
 ## Prerequisites
-* Install Ruby locally
-* Install the bundler gem (gem install bundler)
+* Install Ruby locally: https://stackify.com/install-ruby-on-windows-everything-you-need-to-get-going/
+* Install the bundler gem (command in the terminal : `gem install bundler`)
 * Go to the location of your newly cloned / downloaded framework and do a `bundle install` to install all the necessary gems 
 * In order to run the created scenario, in your terminal run command `cucumber -t @search`
 
