@@ -1,6 +1,6 @@
 module Helpers
-  def click_on_element xpath
-    find(:xpath, xpath).click
+  def click_on_element locator_strategy, locator_value
+    find(locator_strategy, locator_value).click
   end
 
   

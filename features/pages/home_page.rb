@@ -11,7 +11,7 @@ class HomePage < Screen
  end
 
  def click_search_icon
-  find(:css,SEARCH_ICON_CSS).click
+  click_on_element(:css,SEARCH_ICON_CSS)
  end
 
 end
