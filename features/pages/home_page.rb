@@ -1,3 +1,5 @@
+# This is a comment for Git on the Home page file
+
 class HomePage < Screen
   SEARCH_BAR_CSS  = 'search_query_top'
   SEARCH_ICON_CSS =  'button[name="submit_search"]'
