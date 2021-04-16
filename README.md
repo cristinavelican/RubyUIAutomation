@@ -49,4 +49,9 @@ Navigate to the website under test http://automationpractice.com/index.php and a
 * Check the errror messages received in case mandatory fields are not filled in
 * Validate the error message received in case you try to register with an existing email
 * Try to login with a wrong pair of email/password
-* Login successfully to the webste
+* Login successfully to the website
+
+### Shopping cart
+* Add a product to a cart and order it successfully by filling in all the required info (as an authenticated user)
+* Add a product to a cart and order it successfully by filling in all the required info (without being authenticated)
+
